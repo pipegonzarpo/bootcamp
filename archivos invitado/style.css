@@ -1,0 +1,96 @@
+body{background-color: white;
+	 font-family: tahoma, helvetica; 
+	 font-size: 18px;
+	 color: rgb(25, 100, 90);
+	 }
+
+.contenedorheader{width: 70em; margin-left: auto;margin-right: auto;}
+.list{
+	list-style: none;
+}
+
+	.formulario {
+	float: right;	}
+	table{color: grey}
+
+span{font-style: italic; color:#B5B3B3;}
+
+.logo{float: left;
+}
+
+#titulo{color: grey
+		font-style: bold;
+		font:; 
+		font-family:museo-sans-rounded,sans-serif,tahoma, helvetica; 
+		float: left;
+		text-align: ;
+		margin-left: 5em;}
+
+#pred {
+		font-size: 16px ;
+		font-family: Tahoma, helvetica;    
+		background: white;	
+		-moz-column-count:1;
+		column-count: 1 
+		font-style: italic;
+		color:#4F4F4F;
+		text-align: justify;
+		}
+
+#fixedwith{margin-right: 15em;
+		margin-left:15em; 
+		margin-top:3em;
+		border-bottom: 1px solid grey; 
+		padding-bottom: 3em }
+
+#contenidotexto p{
+		-moz-column-count:2;
+		column-count: 2; 
+		font-style:;
+		background-color: }
+
+header {
+		background-image: url("http://www.intrawallpaper.com/static/images/White-Background-9B1.jpg");
+		height: 10em; 
+		width: 100%;
+		padding: 5em 2em 2em
+
+}
+#bgh{width: 100%; height: 125px; 
+	padding-bottom: 2em;
+	 padding-top: 2em;
+	 text-align: center;
+	background-image: url("http://www.intrawallpaper.com/static/images/White-Background-9B1.jpg");
+}
+
+#cbgh {width: 80%; 
+	margin-right: auto;
+	 margin-left: auto; } <!--contendor background herramientas-->  
+
+	#cbgh a img
+	{-webkit-filter: blur(30px);
+           filter: blur(30px);
+       }
+
+#cbgh > a img{	
+	background-color: white;
+
+	-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+#cbgh > a img:hover{
+		margin:auto;
+		width: 120px;
+	 	height: 120px; 
+	 	filter: brightness(105%);
+ }
+
+ 	#espacioabajo{height: 150px
+ 	}
+
+ footer p{text-align: center;
+ 			font-size: 10px
+ 		}

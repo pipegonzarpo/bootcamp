@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<title>ejercicios javascript</title>
+	<meta charset="utf-8">
+	<meta name="autor" content="Felipe">
+
+<head>
+
+<script type="text/javascript" src=angular.min.js></script>
+
+</head>
+
+<body  ng-app="myApp" >
+<!-- para hacer operaciones directamente desde el angular, solo nombrandolas
+<div ng-app>
+
+<p>My first expression: {{  3 * 2+4+6 +2 }}</p>
+
+</div> 
+
+ para hacer contador de clicks o de algo en el front de la pagina
+<div>
+<button ng-click="count = count + 1">Click Me!</button>
+<p>{{ count }}</p>
+</div>
+<script>
+function myController($scope) {$scope.count =0;}
+
+-->
+
+<div id=ejercicio1>
+	<h1>ejercicio1</h1>
+		<p>nombre:</p>
+		<p> <input type="text" ng-model= "nombre" name="nombre">
+		</p>
+		<p>apellido:</p>
+		<p> <input type="text" ng-model= "apellido" name="apellido">
+		</p>
+		<p>Hola {{nombre+" "+apellido}}</p>
+
+</div>
+
+<div id=ejercicio2>
+	<h1>ejercicio2</h1>
+		<p>operando 1<input type="text" ng-model="operando1" name="operando1"></p>
+		<p>operando 2<input type="text" ng-model="operando2" name="operando2"></p>
+
+		<button ng-click="calcular = operando1 * operando2">calcular</button>
+		<p>{{calcular}}</p>
+</div>
+
+	<div id=ejercicio3>
+
+		<h1>ejercicio3</h1>
+
+			<input type="text" ng-model="text" placeholder="ingrese su texto...">
+				<p>{{text}}</p>
+				<p ng-style="text == (text| reverse) ? {color:'red'} : {color:'blue'}">{{text| reverse}}</p>
+				<p>{{text == (text | reverse) ? 'palindromo' : 'no palindromo'}}</p>
+	</div>
+
+			<script>
+				var myApp = angular.module("myApp",[]);
+				myApp.filter("reverse", function() {
+					return function(input) {
+						return input.split("").reverse().join("");
+					};
+				});
+
+
+			</script>
+					<!--	if (bonustrack3a==bonustrack3b) {
+					document.getElementById('bonustrack3b').style.color='grey';
+					};-->
+
+</body>
+
+</html>
